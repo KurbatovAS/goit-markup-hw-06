@@ -470,7 +470,7 @@
               <button type="submit" class="subscribe__button">
                 Подписаться
                 <svg width="24" height="24" class="subscribe__icon">
-                  <use href="./images/sprite.svg#send"></use>
+                  <use href="./images/icons.svg#send"></use>
                 </svg>
               </button>
             </div>
@@ -493,8 +493,10 @@
         </button>
 
         <form class="form">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Оставьте свои данные, мы вам перезвоним</legend>
+          <div class="form__fieldset" role="group" aria-labelledby="contact-details-head">
+            <p id="contact-details-head" class="form__legend">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
 
             <label for="user-input" class="form__label"> Имя</label>
             <div class="form__box">
@@ -528,7 +530,7 @@
               placeholder="Введите текст"
               class="form__textarea"
             ></textarea>
-          </fieldset>
+          </div>
 
           <div class="checkbox">
             <label class="checkbox__label">
